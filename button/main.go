@@ -5,16 +5,12 @@ import (
 	"time"
 )
 
-const (
-	button = machine.D1
-)
-
 func main() {
 	led.Configure(machine.PinConfig{Mode: machine.PinOutput})
 	button.Configure(machine.PinConfig{Mode: machine.PinInputPullup})
 
 	for {
-		if button.Get() {
+		if buttonPushed() {
 			led.High()
 		} else {
 			led.Low()

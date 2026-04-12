@@ -6,6 +6,11 @@ import (
 	"machine"
 )
 
-var (
-	led = machine.LED
+const (
+	led    = machine.LED
+	button = machine.D1
 )
+
+func buttonPushed() bool {
+	return button.Get()
+}
