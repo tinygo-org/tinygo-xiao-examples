@@ -1,6 +1,6 @@
 # tinygo-xiao
 
-TinyGo demos and examples on Seeedstudio Xiao
+TinyGo demos and examples on Seeedstudio XIAO-ESP32C3 and XIAO-ESP32S3.
 
 ## blinky
 
@@ -81,4 +81,21 @@ tinygo flash -target xiao-esp32c3 -size short ./life
 
 ```
 tinygo flash -target xiao-esp32s3 -size short ./life
+```
+
+## scanner
+
+Scans for WiFi access points and displays them on the OLED display.
+
+
+### xiao-esp32c3
+
+```
+tinygo flash -target xiao-esp32c3 -size short ./scanner
+```
+
+### xiao-esp32s3
+
+```
+tinygo flash -target xiao-esp32s3 -size short ./scanner
 ```
