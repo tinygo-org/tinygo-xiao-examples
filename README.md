@@ -1,8 +1,10 @@
-# tinygo-xiao
+# TinyGo + XIAO
 
-TinyGo demos and examples on Seeedstudio XIAO-ESP32C3 and XIAO-ESP32S3.
+[TinyGo]() demos and examples on [Seeedstudio]() [XIAO-ESP32C3]() and [XIAO-ESP32S3]().
 
 ## blinky
+
+![blinky](./images/blinky.gif)
 
 Blinks an LED. The "Hello, World" of things.
 
@@ -19,6 +21,8 @@ tinygo flash -target xiao-esp32s3 -size short ./blinky
 ```
 
 ## button
+
+![button](./images/button.gif)
 
 Push a button, and the LED lights up.
 
@@ -52,6 +56,8 @@ tinygo flash -target xiao-esp32s3 -size short -monitor ./echo
 
 ## display
 
+![display](./images/display.gif)
+
 Shows the xiao controlling an OLED display with an I2C interface
 
 
@@ -67,7 +73,9 @@ tinygo flash -target xiao-esp32c3 -size short ./display
 tinygo flash -target xiao-esp32s3 -size short ./display
 ```
 
-## conway
+## life
+
+![life](./images/life.gif)
 
 Shows the xiao controlling an OLED display with an I2C interface playing Conway's Game of Life
 
