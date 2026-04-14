@@ -108,3 +108,23 @@ tinygo flash -target xiao-esp32c3 -size short ./scanner
 ```
 tinygo flash -target xiao-esp32s3 -size short ./scanner
 ```
+
+## webserver
+
+![webserver](./images/webserver.gif)
+
+![web page](./images/webserver.png)
+
+Runs a small webserver on the Xiao board. Displays the server status on the OLED display.
+
+### xiao-esp32c3
+
+```
+tinygo flash -target xiao-esp32c3 -ldflags="-X main.ssid=YourSSID -X main.password=YourPassword" -monitor ./webserver
+```
+
+### xiao-esp32s3
+
+```
+tinygo flash -target xiao-esp32s3 -ldflags="-X main.ssid=YourSSID -X main.password=YourPassword" -monitor ./webserver
+```
