@@ -128,3 +128,21 @@ tinygo flash -target xiao-esp32c3 -ldflags="-X main.ssid=YourSSID -X main.passwo
 ```
 tinygo flash -target xiao-esp32s3 -ldflags="-X main.ssid=YourSSID -X main.password=YourPassword" -monitor ./webserver
 ```
+
+## mqtt
+
+![mqtt](./images/mqtt.gif)
+
+Connects using the MQTT machine-to-machine messaging protocol from the Xiao board. Displays the status on the OLED display.
+
+### xiao-esp32c3
+
+```
+tinygo flash -target xiao-esp32c3 -ldflags="-X main.ssid=YourSSID -X main.password=YourPassword" -monitor ./mqtt
+```
+
+### xiao-esp32s3
+
+```
+tinygo flash -target xiao-esp32s3 -ldflags="-X main.ssid=YourSSID -X main.password=YourPassword" -monitor ./mqtt
+```

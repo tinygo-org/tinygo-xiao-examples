@@ -12,4 +12,5 @@ require (
 require (
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/soypat/lneto v0.0.0-20260411230216-9e4da57335e7 // indirect
+	github.com/soypat/natiu-mqtt v0.6.0 // indirect
 )
