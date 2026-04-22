@@ -57,6 +57,7 @@ func main() {
 	h, _ := link.Addr()
 	host := h.String()
 	printMessage(host + port)
+	printMessage("webserver up!")
 	err = http.ListenAndServe(host+port, nil)
 	for err != nil {
 		printMessage("error: " + err.Error())
